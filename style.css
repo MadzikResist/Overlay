@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+}
+
+.header{
+    width: 100vw;
+    height: 100vh;
+    display:flex;
+    text-align:center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.background{
+    position: relative;
+    z-index: 1;
+    height: 100vh;
+    width: 100vw;
+    background-color: blue;
+}
+.background::before{
+    content: "";
+    background: black url(road.jpg) no-repeat center/cover;
+    opacity: 0.8;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
+.headerHead{
+    font-size: 3rem;
+    color: #EB9F06;
+
+}
+.headerText{
+    font-size: 1.7rem;
+    width: 30%;
+    margin-top: 20px;
+    color: #EB9F06;
+
+}
+header span{
+    color: #F21A07;
+}
+.headerButton{
+    margin-top: 20px;
+    font-size: 2rem;
+    padding: 6px 14px;
+    background-color: #EB9F06;
+    color: white;
+    cursor: pointer;
+    border-radius: 20px;
+}
+.headerButton a{
+    text-decoration: none;
+    color: white;
+
+}
+.section{
+    display:flex;
+    text-align:center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 2rem;
+    width: 100vw;
+    height: 100vh;
+}
+
+.sectionText{
+    width:80%;
+}
